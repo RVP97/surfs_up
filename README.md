@@ -15,5 +15,7 @@ The purpose of the analysis was to provide W. Avy and the board of directors wit
 ![CleanShot 2022-08-21 at 09 47 42](https://user-images.githubusercontent.com/85131345/185796823-8534d485-258f-4767-9b4e-2aaf5fe01c7e.png)
 
 - There are more anomalies in December, especially for cold days than there are in June:
+![CleanShot 2022-08-21 at 09 51 52](https://user-images.githubusercontent.com/85131345/185797010-b39df4d0-6126-45ee-ae39-dd368b164da8.png)
+![CleanShot 2022-08-21 at 09 52 13](https://user-images.githubusercontent.com/85131345/185797030-aa4a9ee5-ca0b-4a9d-b871-0a0587cb1698.png)
 
 ## Summary
