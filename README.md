@@ -37,6 +37,7 @@ summary_prec['December Precipitation'] = prec_dec_df['December Precipitation'].d
 ```
 
 The following is the resulting DataFrame:
+
 ![CleanShot 2022-08-21 at 10 08 25](https://user-images.githubusercontent.com/85131345/185797717-d8f29758-67ea-48eb-b092-551e3f349453.png)
 
 - The other query I would perform is to get the temperature where there was no rain in the observation. For that I would use the following code:
