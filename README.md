@@ -11,5 +11,6 @@ The purpose of the analysis was to provide W. Avy and the board of directors wit
 - The average temperature per day is also quite similar with only a **3.9** degree difference.
 - Even though the tempeartures are similar, it is important to note that the range of these is higher in December. The lowest was **56** while the highest **83**. In contrast, June has a range of only **21**.
 - The following image will be able to give a clear snapshot of the main differences between the summary statistics of June and December:
+![CleanShot 2022-08-21 at 09 47 42](https://user-images.githubusercontent.com/85131345/185796823-8534d485-258f-4767-9b4e-2aaf5fe01c7e.png)
 
 ## Summary
