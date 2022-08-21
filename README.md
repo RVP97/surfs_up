@@ -34,3 +34,5 @@ prec_june_df = pd.DataFrame(prec_june, columns=['June Precipitation'])
 summary_prec = prec_june_df.describe()
 summary_prec['December Precipitation'] = prec_dec_df['December Precipitation'].describe()
 ```
+![CleanShot 2022-08-21 at 10 08 25](https://user-images.githubusercontent.com/85131345/185797717-d8f29758-67ea-48eb-b092-551e3f349453.png)
+
