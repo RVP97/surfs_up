@@ -27,12 +27,23 @@ The purpose of the analysis was to provide W. Avy and the board of directors wit
 - In general, the temperature behavior is quite similar and it would be wise to go ahead and open a new shop. However, a few more queries should be done to have other important data.
 - It is important to query the precipitation data; the success of the shop will have a strong negative correlation with this. We can use the following code to do so:
 
-```prec_dec = session.query(Measurement.prcp).filter(extract('month', Measurement.date)==12).all()
+```py
+prec_dec = session.query(Measurement.prcp).filter(extract('month', Measurement.date)==12).all()
 prec_dec_df = pd.DataFrame(prec_dec, columns=['December Precipitation'])
 prec_june = session.query(Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
 prec_june_df = pd.DataFrame(prec_june, columns=['June Precipitation'])
 summary_prec = prec_june_df.describe()
 summary_prec['December Precipitation'] = prec_dec_df['December Precipitation'].describe()
 ```
+
+The following is the resulting DataFrame:
 ![CleanShot 2022-08-21 at 10 08 25](https://user-images.githubusercontent.com/85131345/185797717-d8f29758-67ea-48eb-b092-551e3f349453.png)
 
+- The other query I would perform is to get the temperature where there was no rain in the observation. For that I would use the following code:
+
+```py
+no_rain_june = pd.DataFrame(session.query(Measurement.tobs).filter(Measurement.prcp == 0).filter(extract('month', Measurement.date)==6).all(), columns=['No Rain June'])
+no_rain_dec = pd.DataFrame(session.query(Measurement.tobs).filter(Measurement.prcp == 0).filter(extract('month', Measurement.date)==12).all(), columns=['No Rain December'])
+no_rain_summary = no_rain_june.describe()
+no_rain_summary['No Rain December'] = no_rain_dec['No Rain December'].describe()
+```
