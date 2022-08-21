@@ -47,3 +47,5 @@ no_rain_dec = pd.DataFrame(session.query(Measurement.tobs).filter(Measurement.pr
 no_rain_summary = no_rain_june.describe()
 no_rain_summary['No Rain December'] = no_rain_dec['No Rain December'].describe()
 ```
+![CleanShot 2022-08-21 at 10 17 02](https://user-images.githubusercontent.com/85131345/185798151-2477cb74-5c8b-4d5e-997a-ed426d81b8dd.png)
+
